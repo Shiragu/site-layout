@@ -1,0 +1,21 @@
+.about-home {
+  margin: 20px 0;
+  padding: 20px 0;
+  background-color: #e1f1ff;
+  text-align: center;
+  box-sizing: content-box;
+  box-shadow: 0 0 20px #e1f1ff;
+}
+
+.argument {
+  text-align: center;
+  border-bottom: 2px solid #a1d2ff;
+  padding: 0 0 20px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.argument-text {
+  padding: 10px;
+  line-height: 2;
+}

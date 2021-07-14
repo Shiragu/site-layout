@@ -1,0 +1,10 @@
+.hooks {
+  margin: 10px auto;
+  padding: 15px;
+  width: 400px;
+  border: 1px solid #aaa;
+}
+
+.hooks h2 {
+  margin: 5px 0;
+}

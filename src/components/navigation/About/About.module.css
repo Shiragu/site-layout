@@ -1,0 +1,16 @@
+.site-about {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.article {
+  margin: 50px;
+  padding: 10px 50px;
+}
+
+.hooks {
+  margin: 0 auto;
+}

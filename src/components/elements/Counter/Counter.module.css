@@ -1,0 +1,15 @@
+.btn {
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 3px;
+}
+
+.add {
+  background-color: rgb(181, 255, 200);
+  border: 1px solid rgb(116, 255, 185);
+}
+
+.remove {
+  background-color: rgb(255, 221, 216);
+  border: 1px solid rgb(255, 170, 170);
+}

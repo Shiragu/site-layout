@@ -1,0 +1,54 @@
+.card-plate {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  box-sizing: content-box;
+  border-bottom: 2px solid #a1d2ff;
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(45deg, #ecf6ff 30%, #a1d2ff 100%);
+  margin: 15px;
+  width: 400px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(102, 102, 102);
+  z-index: 1;
+}
+
+.hot {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0 10px;
+  background-color: #ffdbe2;
+  color: #000;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: flex;
+  margin: 10px auto;
+  padding: 5px;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 5px;
+  margin: 10px;
+  background-color: #c0fdff;
+  color: #000;
+  border: 1px solid #49f9ff;
+}
+
+.loader {
+  width: 200px;
+  height: 100px;
+  margin: 100px auto;
+}
