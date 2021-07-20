@@ -1,34 +1,60 @@
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #003b46;
+}
+
 .card-plate {
-  width: 100%;
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
-  background-color: #ffffff;
   flex-wrap: wrap;
 }
 
 .card {
   position: relative;
   box-sizing: content-box;
-  border-bottom: 2px solid #a1d2ff;
-  text-align: center;
-  padding: 20px 0;
-  background: linear-gradient(45deg, #ecf6ff 30%, #a1d2ff 100%);
+  padding: 20px 0 10px 0;
+  background: #c4dfe6;
   margin: 15px;
   width: 400px;
-  font-size: 18px;
-  font-weight: bold;
   color: rgb(102, 102, 102);
   z-index: 1;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #0a82888a;
+  transition: 0.3s ease-in;
 }
 
-.hot {
+.card:hover {
+  transform: rotate(2deg) scale(1.1);
+}
+
+.card-title {
+  color: #003b46;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 2px solid #07575b;
+}
+
+.card-description {
+  color: #07575b;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 20px;
+  margin: 10px 0 0 0;
+}
+
+.tag {
   position: absolute;
   top: 5px;
   right: 5px;
   padding: 0 10px;
-  background-color: #ffdbe2;
-  color: #000;
+  background-color: #66a5ad;
+  color: #c4dfe6;
   border-radius: 10px;
 }
 
@@ -40,15 +66,30 @@
 }
 
 .buttons button {
-  padding: 5px;
+  padding: 10px 20px;
   margin: 10px;
-  background-color: #c0fdff;
-  color: #000;
-  border: 1px solid #49f9ff;
+  background-color: #c4dfe6;
+  color: #003b46;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #66a5ad;
+  transition: 0.3s ease-in;
+}
+
+.buttons button:hover {
+  box-shadow: 0 0 5px #c4dfe6;
+  background-color: #003b46;
+  color: #c4dfe6;
 }
 
 .loader {
-  width: 200px;
-  height: 100px;
+  padding: 20px;
   margin: 100px auto;
+  background-color: #66a5ad;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
 }

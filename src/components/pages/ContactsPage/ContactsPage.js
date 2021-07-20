@@ -1,7 +1,7 @@
 import { CardProvider } from "../../elements/ContextDiv/CardContext";
 import ContactsCard from "../../elements/ContextDiv/ContactsCard";
 import ContactsMap from "../../elements/ContextDiv/ContactsMap";
-import classes from "./Contacts.module.css";
+import classes from "./ContactsPage.module.css";
 
 export default function Contacts() {
   return (

@@ -1,17 +1,16 @@
-.about-home {
-  margin: 20px 0;
+.counter-home {
   padding: 20px 0;
-  background-color: #e1f1ff;
+  background-color: #c4dfe6;
   text-align: center;
   box-sizing: content-box;
-  box-shadow: 0 0 20px #e1f1ff;
+  box-shadow: 0 -5px 10px #66a5ad;
 }
 
 .argument {
   text-align: center;
-  border-bottom: 2px solid #a1d2ff;
+  border-bottom: 2px solid #66a5ad;
   padding: 0 0 20px 0;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 24px;
 }
 

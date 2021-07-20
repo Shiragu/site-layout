@@ -40,10 +40,10 @@ function Counter() {
         Убрать
       </button>
       <button onClick={() => addValue()} className={addClasses.join(" ")}>
-        +
+        + множитель
       </button>
       <button onClick={() => removeValue()} className={removeClasses.join(" ")}>
-        -
+        - множитель
       </button>
     </div>
   );

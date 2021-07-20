@@ -7,18 +7,13 @@
   text-align: center;
 }
 
-.article {
-  margin: 50px;
-  padding: 10px 50px;
+.userlist {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 .hooks {
   display: flex;
   flex-direction: column;
-}
-
-.userlist {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
 }

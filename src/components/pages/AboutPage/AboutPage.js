@@ -1,10 +1,9 @@
 import AboutInput from "../../elements/AboutInput/AboutInput";
-import ComplexDiv from "../../elements/ComplexDiv/ComplexDiv";
-import classes from "./About.module.css";
-import UserForm from "./UserForm/UserForm";
-import UserList from "./UserList/UserList";
+import UserList from "../../elements/UserList/UserList";
+import UserForm from "../../elements/UserForm/UserForm";
+import classes from "./AboutPage.module.css";
 
-export default function About() {
+export default function AboutPage() {
   return (
     <section className={classes["site-about"]}>
       <h1 style={{ textAlign: "center" }}>Список пользователей</h1>
@@ -14,7 +13,6 @@ export default function About() {
       <div className={classes.hooks}>
         <UserForm />
         <AboutInput />
-        <ComplexDiv />
       </div>
     </section>
   );

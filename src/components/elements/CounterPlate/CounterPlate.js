@@ -3,7 +3,7 @@ import classes from "./CounterPlate.module.css";
 
 export default function CounterPlate() {
   return (
-    <section className={classes["about-home"]}>
+    <section className={classes["counter-home"]}>
       <div className={classes.argument}>Счётчик на хуках</div>
       <Counter />
       <div className={classes["argument-text"]}>

@@ -29,29 +29,17 @@ export default function Cards() {
   } else {
     return (
       <section>
+        <h2 className={classes["section-title"]}>Недавние посты</h2>
         <div className={classes["card-plate"]}>
-          {/* {items.map((item, index) => {
-          return (
-            <div className={classes.card} key={index}>
-              <div className={classes.hot}>{item.id}</div>
-              Полное имя: {item.name}
-              <hr />
-              E-mail: {item.email}
-              <hr />
-              Улица: {item.address.street}
-              <hr />
-              Название компании: {item.company.name}
-            </div>
-          );
-        })} */}
           {items.map((item, index) => {
             while (item.id <= page) {
               return (
                 <div className={classes.card} key={index}>
-                  <div className={classes.hot}>{item.id}</div>
-                  {item.title}
-                  <hr />
-                  Описание: {item.body}
+                  <div className={classes.tag}>{item.id}</div>
+                  <p className={classes["card-title"]}>{item.title}</p>
+                  <p className={classes["card-description"]}>
+                    Описание: {item.body}
+                  </p>
                 </div>
               );
             }
@@ -63,7 +51,7 @@ export default function Cards() {
               setPage((prev) => (prev >= 100 ? (prev = 100) : prev + 10))
             }
           >
-            Показать ещё
+            <div>Показать ещё</div>
           </button>
           <button
             onClick={() =>
