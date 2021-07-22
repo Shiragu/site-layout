@@ -9,10 +9,10 @@ export default function Menu() {
           <NavLink to="/">Главная</NavLink>
         </li>
         <li>
-          <NavLink to="/about">Всякое</NavLink>
+          <NavLink to="/users">База пользователей</NavLink>
         </li>
         <li>
-          <NavLink to="/contacts">Для заметок</NavLink>
+          <NavLink to="/info">Информация</NavLink>
         </li>
       </ul>
     </>

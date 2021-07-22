@@ -1,24 +1,47 @@
 .user-form {
-  margin: 10px auto;
-  padding: 10px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 150px;
-  max-width: fit-content;
-  border: 2px solid rgb(77, 169, 255);
+  width: fit-content;
+  margin: 100px auto 0;
+  padding: 30px 50px;
+  background-color: #003b46;
+  box-shadow: 0 0 3px #003b46;
+  color: #fff;
+  border-radius: 5px;
 }
 
-.user-form button {
-  align-self: center;
-  max-width: fit-content;
-  padding: 5px 10px;
+.user-form input {
   margin: 10px 0;
-  background-color: #e6edfa;
-  border: 1px solid #94f3ff;
-  font-size: 14px;
+  width: 250px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.user-form label {
-  align-self: center;
+.add-button,
+.close-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 3px #003b46;
+  transition: 0.3s ease-in;
+  background-color: #66a5ad;
+}
+
+.close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px 20px;
+  margin-top: 0;
+}
+
+.add-button:hover,
+.close-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 3px #66a5ad;
 }

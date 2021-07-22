@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import classes from "./UserForm.module.css";
 
-export default function UserForm() {
+export default function UserForm(props) {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [profession, setProfession] = useState("");
@@ -23,6 +23,9 @@ export default function UserForm() {
 
   return (
     <section className={classes["user-form"]}>
+      <button onClick={props.visible} className={classes["close-button"]}>
+        X
+      </button>
       <label htmlFor="name">Имя:</label>
       <input
         id="name"
@@ -44,7 +47,9 @@ export default function UserForm() {
         value={profession}
         onChange={(event) => setProfession(event.target.value)}
       />
-      <button onClick={() => addUser()}>Добавить пользователя</button>
+      <button onClick={addUser} className={classes["add-button"]}>
+        Добавить пользователя
+      </button>
     </section>
   );
 }

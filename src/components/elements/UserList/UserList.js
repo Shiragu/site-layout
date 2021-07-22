@@ -38,7 +38,6 @@ export default function UserList() {
       return (
         <div className={classes.user}>
           <h2>Имя: {user.name}</h2>
-          <hr />
           <p>Возраст: {user.age}</p>
           <p>Род занятий: {user.profession}</p>
         </div>

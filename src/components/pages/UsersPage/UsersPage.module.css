@@ -1,0 +1,42 @@
+.userform {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  background: #ccccccab;
+}
+
+.hidden {
+  display: none;
+}
+
+.show-button {
+  display: block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  background-color: #003b46;
+  box-shadow: 0 0 3px #003b46;
+  transition: 0.3s ease-in;
+}
+
+.show-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 3px #66a5ad;
+}
+
+.userlist {
+  display: flex;
+  flex-wrap: wrap;
+  background: #c4dfe6;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #003b46;
+}
