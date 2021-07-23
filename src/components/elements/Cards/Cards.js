@@ -1,4 +1,5 @@
 import classes from "./Cards.module.css";
+import Button from "../../hoc/Button/Button";
 import { useEffect, useState } from "react";
 
 export default function Cards() {
@@ -46,20 +47,22 @@ export default function Cards() {
           })}
         </div>
         <div className={classes.buttons}>
-          <button
+          <Button
+            className="btn primary-btn"
             onClick={() =>
               setPage((prev) => (prev >= 100 ? (prev = 100) : prev + 10))
             }
           >
-            <div>Показать ещё</div>
-          </button>
-          <button
+            Показать ещё
+          </Button>
+          <Button
+            className="btn primary-btn"
             onClick={() =>
               setPage((prev) => (prev <= 0 ? (prev = 0) : prev - 10))
             }
           >
             Скрыть
-          </button>
+          </Button>
         </div>
       </section>
     );

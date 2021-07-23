@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import Button from "../../hoc/Button/Button";
 import classes from "./UserForm.module.css";
 
 export default function UserForm(props) {
@@ -47,9 +48,9 @@ export default function UserForm(props) {
         value={profession}
         onChange={(event) => setProfession(event.target.value)}
       />
-      <button onClick={addUser} className={classes["add-button"]}>
+      <Button onClick={addUser} className="btn info-btn">
         Добавить пользователя
-      </button>
+      </Button>
     </section>
   );
 }

@@ -12,3 +12,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  border: none;
+  transition: 0.3s ease-in;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 3px #66a5ad;
+}
+
+.primary-btn {
+  background-color: #003b46;
+  color: #c4dfe6;
+}
+
+.primary-btn:hover {
+  box-shadow: 0 0 5px #c4dfe6;
+  color: #c4dfe6;
+}
+
+.info-btn {
+  background-color: #c4dfe6;
+  color: #003b46;
+}
+
+.info-btn:hover {
+  box-shadow: 0 0 5px #c4dfe6;
+}
+
+.danger-btn {
+  background-color: #66a5ad;
+  color: #fff;
+}
+
+.danger-btn:hover {
+  box-shadow: 0 0 5px #c4dfe6;
+  background-color: #003b46;
+}

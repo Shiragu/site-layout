@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import classes from "./Counter.module.css";
+import Button from "../../hoc/Button/Button";
 
 function Counter() {
   const [counter, setCounter] = useState(0);
@@ -26,25 +26,22 @@ function Counter() {
     setValue((prev) => prev - 1);
   }
 
-  const addClasses = [classes.btn, classes.add];
-  const removeClasses = [classes.btn, classes.remove];
-
   return (
     <div>
       <h1>Счётчик: {counter}</h1>
       <p>{message}</p>
-      <button onClick={() => add()} className={addClasses.join(" ")}>
+      <Button className="btn primary-btn" onClick={() => add()}>
         Добавить
-      </button>
-      <button onClick={() => remove()} className={removeClasses.join(" ")}>
+      </Button>
+      <Button className="btn danger-btn" onClick={() => remove()}>
         Убрать
-      </button>
-      <button onClick={() => addValue()} className={addClasses.join(" ")}>
+      </Button>
+      <Button className="btn primary-btn" onClick={() => addValue()}>
         + множитель
-      </button>
-      <button onClick={() => removeValue()} className={removeClasses.join(" ")}>
+      </Button>
+      <Button className="btn danger-btn" onClick={() => removeValue()}>
         - множитель
-      </button>
+      </Button>
     </div>
   );
 }
